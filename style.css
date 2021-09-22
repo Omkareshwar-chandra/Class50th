@@ -43,8 +43,28 @@ body    {
 
 }
 
+.video{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.menu a{
+
+    font-size: 24;
+    padding: 5;
+
+}
+
+
+
 /*{
     border: solid;
     border-radius: 5%;
 }*/
+
 
