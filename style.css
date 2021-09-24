@@ -8,6 +8,11 @@ h1{
     
 }
 
+h2{
+    font-family: Copperplate Gothic Bold;
+    text-align: center;
+}
+
 
 img{
     box-shadow: 3px 2px 5px black;
@@ -24,11 +29,35 @@ body    {
     border-radius: 10px;
   }
 
+.item p{
+    font-weight: bold;
+}
+
+
 .header{
     display:flex;
     justify-content: space-between;
 }
 
+.item{
+    position: relative;
+}
+
+.item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+}
+
+.item:hover p{
+    opacity: 1;
+}
+
+.item:hover img{
+    opacity: 0.33;
+}
 .grid{
 
     display: flex;
@@ -59,7 +88,30 @@ body    {
     padding: 5;
 
 }
+.menu a:visited{
+    color: red;
+}
+.menu{
+    padding: 35;
+}
 
+.header {
+    animation: pop-in .6s ease-out forwards;
+      
+}
+.video{
+    margin-top: 50px;
+}
+
+.footer img {
+    padding: 10px;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .footer img:hover {
+    transform: scale(1.5); 
+  }
 
 
 /*{
